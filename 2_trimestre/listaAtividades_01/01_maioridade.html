@@ -6,7 +6,12 @@
     const idadeano = Number(prompt(`Qual o ano do seu nascimento?`));
 
     //PROCESSAMENTO
-    if (idadeano <= 2005){
+    //const anoAtual = new Date().getFullYear();
+    //const data1 = new Date();
+    //const anoAtual = data1.getFullYear();
+   // if (idadeano <= 2005){
+   // if (anoAtual - 18 >= idadeano){
+    if (new Date().getFullYear() - idadeano >= 18){
         alert(`Você já atingiu a maioridade.`)
     }
 

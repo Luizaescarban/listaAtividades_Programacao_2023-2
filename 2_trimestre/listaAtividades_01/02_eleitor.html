@@ -4,12 +4,21 @@
 
     //ENTRADA
     const idade = Number(prompt(`Insira a sua idade:`));
+    const tituloEletor = prompt(`Vocẽ possui título eleitoral? (S ou N)`).toUpperCase().trim();
 
     //PROCESSAMENTO
-    if (idade >= 16){
-    alert(`Você pode votar.`)
-}
+    if (tituloEletor == "S" && tituloEletor == "N") {
 
-    //SAÍDA
-    else{alert(`Você não pode votar.`)}
+        if (idade >= 16 && tituloEletor == "S") {
+            alert(`Você pode votar.`);
+        }
+        else {
+            alert(`Você não pode votar.`);
+        }
+    }
+    else {
+        alert(`Opção inválida! Possui título deve ser S ou N!`)
+    }
+
+
 </script>
